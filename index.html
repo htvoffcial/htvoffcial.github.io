@@ -26,7 +26,7 @@
          document.body.appendChild(msg2); m1flg=0;},100);
             
                         var msg3 =  document.createElement("div");
-       msg3.innerHTML="Choose items for your menu.<br> About 'Orgnization/Company' is Press[A]<br>About 'hobby' is Press[B]";
+       msg3.innerHTML="Choose items for your menu.<br> About 'Orgnization/Company' is Press[A]<br>About 'hobby' is Press[B]<br>'Clear this console' is Press[C]";
         msg3.style="color:green;margin-left:20px;";
         setTimeout(function(){
          document.body.appendChild(msg3); m1flg=0;},300);
@@ -37,20 +37,40 @@
          document.body.appendChild(msg4); m1flg=2;},300);
           }else if(m1flg==2){
             if(event.key=="a"){
+            var msg6 =  document.createElement("span");
+       msg6.innerHTML="A";
+        msg6.style="color:green;";
+            document.body.appendChild(msg6);
+            }else if(event.key=="b"){
               
-            }
-            if(event.key=="b"){
-              alert("a");
+                          var msg7 =  document.createElement("span");
+       msg7.innerHTML="B";
+        msg7.style="color:green;";
+            document.body.appendChild(msg7);
+                         var msg4 =  document.createElement("div");
+       msg4.innerHTML="\Valunteer,Video Editing😼/ etc...<br>Thank you.";
+        msg4.style="color:green;margin-left:20px;";
+        setTimeout(function(){
+         document.body.appendChild(msg4); m1flg=1;},300);
+              
+              
             }else{
               var msg5 =  document.createElement("div");
         msg5.style="color:green;margin-left:20px;";
-              msg5.innerHTML="Syntax Error.One more Press Key.<br>PROFILEAPP>";
+              msg5.innerHTML="Syntax Error.One more Press Key.";
+              document.body.appendChild(msg5);
+                            var msg5 =  document.createElement("span");
+        msg5.style="color:green;margin-left:20px;";
+              msg5.innerHTML="PROFILEAPP>";
               document.body.appendChild(msg5);
             }
+            
+            
+            
         }
     }
 
-document.body.addEventListener('keydown', keyDown);
+document.body.addEventListener('keyup', keyDown);
       </script>
         
     </ul>
