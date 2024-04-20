@@ -26,7 +26,7 @@
          document.body.appendChild(msg2); m1flg=0;},100);
             
                         var msg3 =  document.createElement("div");
-       msg3.innerHTML="Choose items for your menu.<br> About 'Orgnization/Company' is Press[A]<br>About 'hobby' is Press[B]<br>'Clear this console' is Press[C]";
+       msg3.innerHTML="Choose items for your menu.<br> About 'Orgnization/Company' is Press[A]<br>About 'hobby' is Press[B]<br>'Clear this console' is Press[C]<br>'SNS' is Press[D]";
         msg3.style="color:green;margin-left:20px;";
         setTimeout(function(){
          document.body.appendChild(msg3); m1flg=0;},300);
@@ -62,7 +62,20 @@
               
             }else if(event.key=="c"){
               location.reload();
-            }else{
+            }else if(event.key=="d"){
+              
+              var msg7 =  document.createElement("span");
+msg7.innerHTML="D";
+msg7.style="color:green;";
+document.body.appendChild(msg7);
+             var msg4 =  document.createElement("div");
+msg4.innerHTML="</b>My official SNS</b><br>X <a href='https://twitter.com/sharu2920'>@sharu2920</a><br> Nice to Meet you!";
+msg4.style="color:green;margin-left:20px;";
+setTimeout(function(){
+document.body.appendChild(msg4); m1flg=1;},300);
+  
+  
+}else{
               var msg5 =  document.createElement("div");
         msg5.style="color:green;margin-left:20px;";
               msg5.innerHTML="Syntax Error.One more Press Key.";
