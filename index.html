@@ -23,14 +23,31 @@
        msg2.innerHTML="_______________________________<br>Haruharu's Profile Console Ver1.0.0<br> (c)2024 Haruharu,All right reserved.<br>_______________________________";
              msg2.style="color:green;margin-left:20px;";
         setTimeout(function(){
-         document.body.appendChild(msg2); m1flg=1;},100);
+         document.body.appendChild(msg2); m1flg=0;},100);
             
                         var msg3 =  document.createElement("div");
-       msg3.innerHTML="Choose items for your menu.<br> 'Orgnization/Company' is Press[A]";
+       msg3.innerHTML="Choose items for your menu.<br> About 'Orgnization/Company' is Press[A]<br>About 'hobby' is Press[B]";
         msg3.style="color:green;margin-left:20px;";
         setTimeout(function(){
-         document.body.appendChild(msg3); m1flg=1;},300);
-          }
+         document.body.appendChild(msg3); m1flg=0;},300);
+            var msg4 =  document.createElement("span");
+       msg4.innerHTML="PROFILEAPP>";
+        msg4.style="color:green;margin-left:20px;";
+        setTimeout(function(){
+         document.body.appendChild(msg4); m1flg=2;},300);
+          }else if(m1flg==2){
+            if(event.key=="a"){
+              
+            }
+            if(event.key=="b"){
+              alert("a");
+            }else{
+              var msg5 =  document.createElement("div");
+        msg5.style="color:green;margin-left:20px;";
+              msg5.innerHTML="Syntax Error.One more Press Key.<br>PROFILEAPP>";
+              document.body.appendChild(msg5);
+            }
+        }
     }
 
 document.body.addEventListener('keydown', keyDown);
