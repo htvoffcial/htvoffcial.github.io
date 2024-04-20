@@ -16,11 +16,18 @@
         msg1.style="color:green;margin-left:10px;";
         setTimeout(function(){
          document.body.appendChild(msg1); m1flg=1;},2000);
+        
         function keyDown(event){
-          alert();
+          if(m1flg==1){
+               var msg2 =  document.createElement("div");
+       msg2.innerHTML="_______________________________<br>Haruharu's Profile Console Ver1.0.0<br> (c)2024 Haruharu,All right reserved.<br>_______________________________";
+             msg2.style="color:green;margin-left:20px;";
+        setTimeout(function(){
+         document.body.appendChild(msg2); m1flg=1;},100);
+          }
     }
 
-body.addEventListener('keydown', keyDown);
+document.body.addEventListener('keydown', keyDown);
       </script>
         
     </ul>
