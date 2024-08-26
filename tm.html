@@ -1,0 +1,106 @@
+<html>
+  <script src="//accaii.com/haruharutv/script.js" async></script><noscript><img src="//accaii.com/haruharutv/script?guid=on"></noscript>
+  <body style="background:#000;">
+    <div style="color:green;margin:none;">
+    <ul>
+        はるはる Haruharu 
+      <script>
+        var m1flg=0;
+      var rootname =  document.createElement("p");
+       rootname.innerHTML="$ ~ haruharutv :";
+        rootname.style="font-weight:bold;color:green;margin-left:10px;display:inline;";
+        setTimeout(function(){
+         document.body.appendChild(rootname);},200);
+        
+              var msg1 =  document.createElement("span");
+       msg1.innerHTML="Preess Any key...";
+        msg1.style="color:green;margin-left:10px;";
+        setTimeout(function(){
+         document.body.appendChild(msg1); m1flg=1;},905);
+        
+        function keyDown(event){
+          if(m1flg==1){
+               var msg2 =  document.createElement("div");
+       msg2.innerHTML="_______________________________<br>Haruharu's Profile Console Ver1.0.0<br> (c)2024 Haruharu,All right reserved.<br>_______________________________";
+             msg2.style="color:green;margin-left:20px;";
+        setTimeout(function(){
+         document.body.appendChild(msg2); m1flg=0;},100);
+            
+                        var msg3 =  document.createElement("div");
+       msg3.innerHTML="Choose items for your menu.<br> About 'Orgnization/Company' is Press[A]<br>About 'hobby' is Press[B]<br>'Clear this console' is Press[C]<br>'SNS' is Press[D]";
+        msg3.style="color:green;margin-left:20px;";
+        setTimeout(function(){
+         document.body.appendChild(msg3); m1flg=0;},300);
+            var msg4 =  document.createElement("span");
+       msg4.innerHTML="PROFILEAPP>";
+        msg4.style="color:green;margin-left:20px;";
+        setTimeout(function(){
+         document.body.appendChild(msg4); m1flg=2;},300);
+          }else if(m1flg==2){
+            if(event.key=="a"){
+            var msg6 =  document.createElement("span");
+       msg6.innerHTML="A";
+              
+        msg6.style="color:green;";
+            document.body.appendChild(msg6);
+                                   var msg4 =  document.createElement("div");
+       msg4.innerHTML="<b>Haruharu's Working Company of list.</b><br>I'll tell you Company and Department.<br><li>Haruharu Television Japan - Chairman</li><li>Haruharu Television Group.(Registration to under Indeeecsa Orgnization Database.) - Chairman</li><li>Haruharu Music Group - CEO</li> etc...<br>Thank you.";
+        msg4.style="color:green;margin-left:20px;";
+        setTimeout(function(){
+         document.body.appendChild(msg4); m1flg=1;},300);
+            }else if(event.key=="b"){
+              
+                          var msg7 =  document.createElement("span");
+       msg7.innerHTML="B";
+        msg7.style="color:green;";
+            document.body.appendChild(msg7);
+                         var msg4 =  document.createElement("div");
+       msg4.innerHTML="\Valunteer,Video Editing😼/ etc...<br>Thank you.";
+        msg4.style="color:green;margin-left:20px;";
+        setTimeout(function(){
+         document.body.appendChild(msg4); m1flg=1;},300);
+              
+              
+            }else if(event.key=="c"){
+              location.reload();
+            }else if(event.key=="d"){
+              
+              var msg7 =  document.createElement("span");
+msg7.innerHTML="D";
+msg7.style="color:green;";
+document.body.appendChild(msg7);
+             var msg4 =  document.createElement("div");
+msg4.innerHTML="</b>My official SNS</b><br>X <a href='https://twitter.com/sharu2920'>@sharu2920</a><br> Nice to Meet you!";
+msg4.style="color:green;margin-left:20px;";
+setTimeout(function(){
+document.body.appendChild(msg4); m1flg=1;},300);
+  
+  
+}else{
+              var msg5 =  document.createElement("div");
+        msg5.style="color:green;margin-left:20px;";
+              msg5.innerHTML="Syntax Error.One more Press Key.";
+              document.body.appendChild(msg5);
+                            var msg5 =  document.createElement("span");
+        msg5.style="color:green;margin-left:20px;";
+              msg5.innerHTML="PROFILEAPP>";
+              document.body.appendChild(msg5);
+            }
+            
+            
+            
+        }
+    }
+
+document.body.addEventListener('keyup', keyDown);
+      </script>
+        
+    </ul>
+    </div>
+  </body>
+  <style>
+    body,html{
+      margin:0px;
+    }
+  </style>
+</html>
