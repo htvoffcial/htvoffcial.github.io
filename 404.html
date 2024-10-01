@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body,
+        html {
+            font-family: "Poppins", "Noto Sans JP", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <link rel="icon" href="sharu.ico">
+    <link rel="apple-touch-icon" href="sharu.jpg">
+    <title>Haruharu Developper Site.(EN)</title>
+    <script>if (window.location.protocol == 'http:') { window.location.protocol = "https:"; }</script>
+    <script src="https://haruharutv.xsrv.jp/a-ip.php"></script>
+</head>
+
+<body>
+    <div class="title-box">
+        <p>
+            <b>404</b>
+            Not Found
+            <br>
+            <span class="discript1" id="flexiblemessage1"></span>
+        </p>
+        <script>
+            var messageja = [
+                "こんにちは！お元気ですか？",
+                "英語を学ぶことはとても良いことです。<br>(デバイスの言語設定を英語にしてこのページを見ると...?)"
+            ];
+            var messageen = [
+                "Hi there! How are you today?",
+                "Learning English is very good!"
+            ];
+            if (window.navigator.language.indexOf("ja") === -1) {
+                document.getElementById("flexiblemessage1").innerHTML = messageja[Math.floor(Math.random() * messageja.length)] + "<br>数秒後にホームページに戻ります。";
+            } else {
+                document.getElementById("flexiblemessage1").innerHTML = "Page will return to the home page soon...<br>" + messageen[Math.floor(Math.random() * messageen.length)];
+            }
+
+
+        </script>
+        <div class="down-allow"></div>
+    </div>
+    <style>
+        hr {
+            outline: none;
+            border: solid 1px gray;
+        }
+
+        a-box {
+            width: 100%;
+            display: flex;
+            height: 55vh;
+            background: #fefefe;
+        }
+
+        a-disc-l {
+            float: left;
+            width: 50%;
+            display: block;
+            height: 100%;
+            background: #2b2010;
+            position: relative;
+        }
+
+        a-disc-l>p {
+            position: absolute;
+            color: #fff;
+            font-size: 1em;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%)translateY(-50%);
+        }
+
+        a-image-r {
+            float: right;
+            display: block;
+            width: 50%;
+            height: 100%;
+        }
+
+        a-image-r>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        a-disc-r {
+            float: right;
+            width: 50%;
+            display: block;
+            height: 100%;
+            background: #2b2010;
+            position: relative;
+        }
+
+        a-disc-r>p {
+            position: absolute;
+            color: #fff;
+            font-size: 1em;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        a-image-l {
+            float: left;
+            display: block;
+            width: 50%;
+            height: 100%;
+        }
+
+        a-image-l>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .foot-flex {
+            display: flex;
+        }
+
+        .foot-flex>div>a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .foot-flex>div {
+            margin: 20px;
+        }
+
+        .foot-box {
+            padding: 20px;
+            background: #fefefe;
+        }
+
+        .three-sprit {
+            display: flex;
+        }
+
+        .three-sprit>a {
+            text-decoration: none;
+            display: block;
+            color: #000;
+            margin: 6px;
+        }
+
+        .news-box {
+            border: solid 1px gray;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .title-box {
+            width: 100%;
+            height: 99%;
+            /*  background: rgb(192, 34, 209);
+                        background: linear-gradient(0deg, rgba(192, 34, 209, 1) 0%, rgba(231, 121, 255, 1) 32%, rgba(116, 246, 212, 1) 100%);*/
+            background: url(https://haruharu.static.jp/edogawa-fujisan.jpeg);
+            object-fit: contain;
+            position: relative;
+            text-align: center;
+        }
+
+        .ctner {
+            margin: auto;
+            width: 75%;
+        }
+
+        .title-box>p {
+            position: absolute;
+            color: #fff;
+            font-size: 3em;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%)translateY(-50%);
+        }
+
+        .title-box>p {
+            transition: all 1s ease-out;
+        }
+
+        .title-box>p:hover {
+            font-size: 3.5em;
+        }
+
+        .discript1 {
+            font-size: 0.5em;
+        }
+
+        .three-sprit>a {
+            text-align: center;
+            box-shadow: 0px 0px 15px -5px #777777;
+            border-radius: 13px;
+            width: calc(100% / 3);
+        }
+
+        .three-sprit>a>img {
+            border-radius: 13px;
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        body,
+        html {
+            cursor: default;
+            user-select: none;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        /*ここからスマホ用メディアクエリ*/
+        @media screen and (max-width: 768px) {
+            .ctner {
+                width: 95%;
+            }
+
+            .three-sprit>a {
+                width: 100%;
+                margin: 0px;
+                margin-top: 10px;
+            }
+
+            .three-sprit {
+                flex-direction: column;
+            }
+
+            .foot-flex {
+                flex-direction: column;
+            }
+
+            a-box {
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            .foot-flex>div {
+                margin: 10px;
+            }
+
+            a-disc-l {
+                width: 100%;
+            }
+
+            a-image-r {
+                width: 100%;
+            }
+
+            a-disc-r {
+                width: 100%;
+            }
+
+            a-image-l {
+                width: 100%;
+            }
+        }
+
+        .down-allow::before {
+            position: absolute;
+            bottom: 100px;
+            left: 60px;
+            color: #fff;
+            display: inline-block;
+            content: "Scroll";
+            background: #fff;
+            width: 1px;
+            height: 20px;
+        }
+
+        .down-allow {
+            color: #fff;
+        }
+
+        @keyframes anmd {
+            0% {
+                height: 0px;
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                height: 100px;
+            }
+        }
+
+        .down-allow::before {
+            animation: anmd 2.5s infinite;
+        }
+    </style>
+</body>
+
+</html>
