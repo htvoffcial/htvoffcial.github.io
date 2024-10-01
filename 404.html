@@ -38,7 +38,7 @@
                 "Hi there! How are you today?",
                 "Learning English is very good!"
             ];
-            if (window.navigator.language.indexOf("ja") === -1) {
+            if (window.navigator.language.indexOf("ja") === 0) {
                 document.getElementById("flexiblemessage1").innerHTML = messageja[Math.floor(Math.random() * messageja.length)] + "<br>数秒後にホームページに戻ります。";
             } else {
                 document.getElementById("flexiblemessage1").innerHTML = "Page will return to the home page soon...<br>" + messageen[Math.floor(Math.random() * messageen.length)];
